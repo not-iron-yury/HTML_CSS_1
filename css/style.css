@@ -22,6 +22,10 @@ img{
     max-width: 100%;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
 
 .list-reset{
 margin: 0;
@@ -49,16 +53,17 @@ body {
     width: 1200px;
 }
 
-.header{
-    background-color: black;
-    /* background-image: url(/img/top-img.jpg);
-    height: 100; */
+/* Header start */
+.header__wrapper{
+    position: relative;
 }
 
 .header__main {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 100px;
     color: #ffff;
     font-weight: 600;
@@ -99,12 +104,14 @@ body {
 .active-lng {
     color: #ffff;
 }
+/* Header end */
 
+/* Intro start */
 .intro {
-    background: url(/img/top-img.jpg);
+    background: url(../img/top-img.jpg);
+    height: 100vh;
+    padding-top: 217px;
 }
-
-
 
 .intro h1 {
     color: #fff;
