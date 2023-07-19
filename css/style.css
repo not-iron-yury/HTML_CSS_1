@@ -37,3 +37,65 @@ cursor: pointer;
 }
 
 /*---------------------------*/
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.header{
+    background-color: black;
+    /* background-image: url(/img/top-img.jpg);
+    height: 100; */
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    color: #ffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 387px;
+    line-height: 1.4;
+}
+
+.header__nav ::after {
+    display: block;
+    content: ""; 
+    height: 2px; 
+    width: 0%;
+    background-color: #ffff;
+    
+}
+
+.header__nav :hover::after,
+.header__nav :focus::after {
+    width: 100%;
+}
+
+.header__nav :hover{
+    color:#ffff;
+} 
+
+.header__lng {
+    display: flex;
+    justify-content: space-between;
+    color: #b7b7b7;
+    width: 49px;
+}
+
+.active-lng {
+    color: #ffff;
+}
