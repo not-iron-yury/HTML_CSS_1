@@ -41,6 +41,7 @@ cursor: pointer;
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 15px;
+    margin: 0 auto;
 }
 
 .container {
@@ -97,4 +98,16 @@ body {
 
 .active-lng {
     color: #ffff;
+}
+
+.intro {
+    background: url(/img/top-img.jpg);
+}
+
+
+
+.intro h1 {
+    color: #fff;
+    font-size: 48px;
+    max-width: 790px;
 }
