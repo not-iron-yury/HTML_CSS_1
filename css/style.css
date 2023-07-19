@@ -75,14 +75,13 @@ body {
     display: block;
     content: ""; 
     height: 2px; 
-    width: 0%;
-    background-color: #ffff;
-    
+    background: transparent;
+    transition: background 0.5s ease;
 }
 
 .header__nav :hover::after,
 .header__nav :focus::after {
-    width: 100%;
+    background: #ffff;
 }
 
 .header__nav :hover{
