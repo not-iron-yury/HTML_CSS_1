@@ -43,8 +43,9 @@ cursor: pointer;
 /*---------------------------*/
 
 body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 15px;
+    font-weight: 400;
     margin: 0 auto;
 }
 
@@ -56,7 +57,9 @@ body {
 /* Header start */
 .header__wrapper{
     position: relative;
+    z-index: 100;
 }
+
 
 .header__main {
     position: absolute;
@@ -68,6 +71,11 @@ body {
     color: #ffff;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.logo {
+    display: inline-block;
+    height: 65px;  
 }
 
 .header__nav {
@@ -99,22 +107,83 @@ body {
     justify-content: space-between;
     color: #b7b7b7;
     width: 49px;
+    transition: color 0.3s ease;
 }
 
+.header__lng:hover {
+    color: #fff;
+}
 .active-lng {
     color: #ffff;
 }
 /* Header end */
 
+
 /* Intro start */
 .intro {
-    background: url(../img/top-img.jpg);
-    height: 100vh;
-    padding-top: 217px;
+    background: url(../img/top-img.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.intro::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.300);
+}
+
+.intro__wrapper {
+    display: flex;
+    align-items: center;
+    height: 750px;
+    position: relative;
+    z-index: 2;
+}
+
+.intro__main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .intro h1 {
+    max-width: 790px;
     color: #fff;
     font-size: 48px;
-    max-width: 790px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+
+.red-button {
+    min-width: 198px;
+    min-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #DB2512;
+    transition: all 0.25s ease;
+}
+
+.red-button:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+/* Intro end */
+
+/* Intro start */
+
+.info__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__item {
+    width: 386px;
+    height: 196px;
 }
