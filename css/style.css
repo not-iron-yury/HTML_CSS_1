@@ -178,12 +178,23 @@ body {
 
 /* Intro start */
 
+.info{
+
+}
+
+.info__wrapper {
+
+}
+
 .info__main {
     display: flex;
     justify-content: space-between;
 }
 
-.info__item {
-    width: 386px;
+.item__content {
+    width: 380px;
     height: 196px;
+    padding: 20px 43px;
+    border: 1px solid  rgba(0, 0, 0, 0.10);;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.5);
 }
