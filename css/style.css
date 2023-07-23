@@ -61,7 +61,6 @@ body {
     z-index: 100;
 }
 
-
 .header__main {
     position: absolute;
     display: flex;
@@ -307,11 +306,159 @@ body {
     color: #fff;
 }
 
-
-
 .services h3 {
     font-style: 20px;
     font-weight: 600;
 }
+/* Services end */
 
+
+/* About start */
+.about {
+    height: 665px;
+    color: #fff;
+    background-color: #171616;
+    margin-bottom: 99px;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 116px 0;
+}
+
+.about__content {
+    width: 490px;
+}
+
+.about__title {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 42px;
+}
+
+.about__text {
+    font-weight: 500;
+    letter-spacing: 2.7px;
+    color: #B7B7B7;
+    margin-bottom: 48px;
+}
+
+.about__link {
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    color:#fff;
+}
+
+.about__link::after {
+    display: block;
+    content: "";
+    height: 2px;
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+.about__link:hover::after,
+.about__link:focus::after {
+    background: #fff;
+}
+
+.about__link:hover{
+    color:#ffff;
+} 
+
+.about_img {
+    width: 513px;
+    height: 342px;
+}
+/* About end */
+
+
+/* Process start */
+.process {
+    margin-bottom: 99px;
+}
+
+.process__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process__title {
+    font-size: 148px;
+}
+
+.process__subtitle {
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 80px;
+}
+
+.process__items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.process__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 386px;
+    height: 150px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    transition: box-shadow 0.2s;
+}
+
+.item__title {
+    margin-bottom: 15px;
+}
+
+.item__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #b7b7b7;
+}
+/* Process end */
+
+
+/* contact start */
+
+.contact {
+    height: 665px;
+    background-color: #171616;
+}
+
+.contact__wrapper {
+
+}
+
+
+
+/* contact end */
+
+
+/* footer start */
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+}
+
+.footer__copyright {
+    letter-spacing: 2px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    width: 115px;
+}
+/* footer end */
 
