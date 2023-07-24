@@ -156,11 +156,34 @@
         <div class="container">
             <div class="contact__wrapper">
                 <div class="contact__form">
-                    
+                    <h2 class="contact__title">Contact us</h2>
+                    <form class="contact__form" action="" method="POST" enctype="text/plain">
+                        <div class="contact__items">
+                            <div class="items__input">
+                                <div class="input__group-1">
+                                    <label for="Name">Name</label>
+                                    <input type="text" id="Name" name="userName" autocomplete="no">
+                                    <label for="Email">Email</label>
+                                    <input type="email" id="Email" name="userEmail" autocomplete="no">
+                                </div>
+                                <div class="input__group-2">
+                                    <label for="Last_name">Last name</label>
+                                    <input type="text" id="Last_name" name="userLastName" autocomplete="no">
+                                    <label for="Phone">Phone</label>
+                                    <input type="tel" id="Phone" name="userPhone" autocomplete="no">
+                                    
+                                </div>
+                            </div>
+                            <label class="label" for="Message">Message</label>
+                            <textarea class="textarea" name="Message" id="Message" cols="30" rows="10" name="userMessage"></textarea>
+                        </div>
+                    </form>
+                    <button class="contact__button red-button btn-reset">SEND</button>
                 </div>
             </div>
         </div>
     </section>
+    <!--/contact-->
     <!--/main-->
     <footer class="footer">
         <div class="container">

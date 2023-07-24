@@ -417,6 +417,9 @@ body {
 
 .item__title {
     margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .item__text {
@@ -430,15 +433,52 @@ body {
 /* contact start */
 
 .contact {
+    padding: 100px 0;
     height: 665px;
+    color: #fff;
     background-color: #171616;
 }
 
-.contact__wrapper {
-
+.contact__form {
+    max-width: 440px;
+    margin-bottom: 35px;
 }
 
+.contact__title {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
 
+.contact__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.items__input {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.input__group-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__group-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    height: 30px;
+}
 
 /* contact end */
 
